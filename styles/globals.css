@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    /* .icon {
+        @apply hidden hover: bg-gray-300;
+    } */
+    /* .icon {
+        @apply xl: inline-flex;
+    } */
+    .icon {
+        @apply rounded-full text-gray-700 cursor-pointer p-2 h-10 w-10 bg-gray-200;
+    }
+    /* .icon {
+        @apply bg-gray-200;
+    } */
+}

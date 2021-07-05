@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import HeaderIcon from '../components/HeaderIcon'
+// import '../styles/globals.css'
 import {
     BellIcon, ChatIcon,ChevronDownIcon,HomeIcon,
     UserGroupIcon, ViewGridIcon}
@@ -30,7 +31,7 @@ function Header() {
 
             <div className='flex ml-2 items-center rounded-full bg-gray-100 p-2'>
             <SearchIcon className='h-6 text-gray-600' />
-                <input type="text" placeholder="Search Facebook" className="flex ml-2 bg-transparent placeholder-gray-500 outline-none flex-shrink" />
+                <input type="text" placeholder="Search Facebook" className="hidden md:inline-flex flex ml-2 bg-transparent placeholder-gray-500 outline-none flex-shrink" />
             </div>
         </div>
 
@@ -46,10 +47,14 @@ function Header() {
         </div>
 
         {/* right nav */}
-        <div>
+        <div className='flex items-center sm:space-x-2 justify-end'>
             {/* image */}
 
-            <p className='fontweight-semibold'>Bonnie Lou</p>
+            <p className='whitespace-nowrap pr-3 fontweight-semibold'>Bonnie Lou</p>
+            <ViewGridIcon className='icon ' />
+            <ChatIcon className='icon ' />
+            <BellIcon className='icon ' />
+            <ChevronDownIcon className='icon ' />
         </div>
         </div>
     )
